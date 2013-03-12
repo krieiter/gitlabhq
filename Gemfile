@@ -9,6 +9,7 @@ def linux_only(require_as)
 end
 
 gem "rails", "3.2.11"
+gem "rack-mount"
 
 # Supported DBs
 gem "mysql2", group: :mysql
@@ -42,7 +43,7 @@ gem "pygments.rb",  git: "https://github.com/gitlabhq/pygments.rb.git", branch: 
 gem "github-linguist", "~> 2.3.4" , require: "linguist"
 
 # API
-gem "grape", "~> 0.2.1"
+gem "grape", "0.2.1"
 
 # Format dates and times
 # based on human-friendly examples
@@ -101,7 +102,7 @@ group :assets do
   gem "sass-rails",   "~> 3.2.5"
   gem "coffee-rails", "~> 3.2.2"
   gem "uglifier",     "~> 1.3.0"
-  gem "therubyracer"
+  #gem "therubyracer"
 
   gem 'chosen-rails',     "0.9.8"
   gem 'jquery-atwho-rails', "0.1.7"
